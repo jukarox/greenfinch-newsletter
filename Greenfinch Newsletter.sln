@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27004.2008
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greenfinch", "Greenfinch Newsletter\Greenfinch.csproj", "{02D637D0-E8E5-494D-AE9A-4A142474FCE4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greenfinch.Data", "Greenfinch.Data\Greenfinch.Data.csproj", "{8AFE392C-EB56-4E6D-A312-62B51315B154}"
+	ProjectSection(ProjectDependencies) = postProject
+		{E24196CF-20AC-4DA4-BB18-1DEC52BE4F74} = {E24196CF-20AC-4DA4-BB18-1DEC52BE4F74}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Greenfinch.Business", "Greenfinch.Business\Greenfinch.Business.csproj", "{E24196CF-20AC-4DA4-BB18-1DEC52BE4F74}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{02D637D0-E8E5-494D-AE9A-4A142474FCE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02D637D0-E8E5-494D-AE9A-4A142474FCE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02D637D0-E8E5-494D-AE9A-4A142474FCE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02D637D0-E8E5-494D-AE9A-4A142474FCE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AFE392C-EB56-4E6D-A312-62B51315B154}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AFE392C-EB56-4E6D-A312-62B51315B154}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AFE392C-EB56-4E6D-A312-62B51315B154}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AFE392C-EB56-4E6D-A312-62B51315B154}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E24196CF-20AC-4DA4-BB18-1DEC52BE4F74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E24196CF-20AC-4DA4-BB18-1DEC52BE4F74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E24196CF-20AC-4DA4-BB18-1DEC52BE4F74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E24196CF-20AC-4DA4-BB18-1DEC52BE4F74}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {13E3F63A-C614-4E13-810D-3623E5B0736F}
+	EndGlobalSection
+EndGlobal

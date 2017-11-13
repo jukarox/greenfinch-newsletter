@@ -1,0 +1,54 @@
+﻿@model Greenfinch.Models.NewsletterRegistrationViewModel
+
+@{
+    ViewBag.Title = "Greenfinch Newsletter";
+}
+
+<title>@ViewBag.Title</title>
+
+
+<div class="modal fade" tabindex="-1" id="newsletterModal"
+     data-keyboard="false" data-backdrop="static">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">×</button>
+                <h4 class="modal-title">Newsletter</h4>
+            </div>
+
+            <form asp-controller="Home" asp-action="SubscribeNewsletter" method="post" class="form-horizontal" role="form">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <label asp-for="Email" class="col-md-2 control-label"></label>
+                        <div class="col-md-10">
+                            <input asp-for="Email" class="input-sm form-control" />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="HeardAboutUsId" class="col-md-2 control-label"></label>
+                        <div class="col-md-10">
+                            <select asp-for="HeardAboutUsId" class="input-sm form-control" asp-items="@(@ViewBag.HeardAboutUsOptions)">
+                                <option disabled selected>--- Select one ---</option>
+                            </select>
+                            <span asp-validation-for="HeardAboutUsId" class="text-danger"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="ReasonSigningUp" class="col-md-2 control-label"></label>
+                        <div class="col-md-10">
+                            <textarea asp-for="ReasonSigningUp"></textarea>
+                            <span asp-validation-for="ReasonSigningUp" class="text-danger"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-primary button button4">Sign</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
